@@ -1,24 +1,24 @@
 # Usage
 
-## install rust
+## Install rust
 `curl https://sh.rustup.rs -sSf | sh`
 test with `cargo --version`
 
-## get libra code
+## Get libra code
 `git clone https://github.com/libra/libra.git && cd libra`
 `./scripts/dev_setup.sh`
 `./scripts/cli/start_cli_testnet.sh`
 
-### 创建两个账户
+### Create two account
 `account create`
 `account create`
-### 查看账户
+### Show account list
 `account list`
-### 给第一个账户挖矿
+### Mint for first account
 `account mint 0 100`
-### 查看账户
+### Show first account balance
 `query balance 0`
-### 转账
+### Transfer from 0 to 1 account
 `transfer 0 1 10`
-### 查看交易
+### Show transaction
 `query txn_acc_seq 0 0 false`
